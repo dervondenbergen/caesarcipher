@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Caesar cipher</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="info">
+      <h1>Caesar cipher</h1>
+      <h2>How to use?</h2>
+      <p>
+        Type the text of your choice in the textbox below. After doing this, or also while typing, choose the shift you want to use to cipher the text. More infos about the Caeser cipher are on the <a href="http://en.wikipedia.org/wiki/Caesar_cipher">Wikipedia Page</a>.
+      </p>
+      <p>
+        Made by <a href="https://demont.is">@dervondenbergen</a>
+      </p>
+    </div>
+    <textarea class="input" tabindex="1"></textarea>
+    <div class="shift">
+      <h3>Shift</h3>
+      <input type="number" min="0" max="25" value="0" tabindex="2"/>
+      <div id="increase" class="increase button" tabindex="3" role="button">+</div>
+      <div id="decrease" class="decrease button" tabindex="4" role="button">–</div>
+      <div class="example">(A → <span class="to">A</span>)</div>
+    </div>
+    <textarea class="output" tabindex="5"></textarea>
+  </body>
+  <script src="script.js" async></script>
+</html>
