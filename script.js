@@ -37,14 +37,22 @@ function buttonKeypress (event) {
 
 function increaseShift () {
   
-  if (shift.value < 25) shift.value++;
+  if (shift.value < 25) {
+    shift.value++;
+  } else {
+    shift.value = 0;
+  }
   updateThings();
   
 }
 
 function decreaseShift () {
   
-  if (shift.value > 0) shift.value--;
+  if (shift.value > 0) {
+    shift.value--;
+  } else {
+    shift.value = 25;
+  }
   updateThings();
   
 }
