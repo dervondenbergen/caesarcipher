@@ -2,30 +2,27 @@
   <head>
     <title>Caesar cipher</title>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style.css">
+    <meta name="charset" content="utf-8">
+    <!-- cdn -->
+    <script type="text/javascript" src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/styled-components/dist/styled-components.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
+    <!-- cipher -->
+    <script type="text/javascript" src="./globalStyles.js"></script>
+    <script type="text/javascript" src="./helper.js"></script>
+    <script type="text/babel" src="./Section.jsx"></script>
+    <script type="text/babel" src="./StyledTextarea.jsx"></script>
+    <script type="text/babel" src="./Info.jsx"></script>
+    <script type="text/babel" src="./Shift.jsx"></script>
+    <script type="text/babel" src="./Input.jsx"></script>
+    <script type="text/babel" src="./Output.jsx"></script>
+    <script type="text/babel" src="./App.jsx"></script>
+    <script type="text/babel">
+      ReactDOM.render(<App />, app)
+    </script>
   </head>
   <body>
-    <div class="info">
-      <h1>Caesar cipher</h1>
-      <h2>How to use?</h2>
-      <p>
-        Type the text of your choice in the textbox below. After doing this, or also while typing, choose the shift you want to use to cipher the text. More infos about the Caeser cipher are on the <a href="http://en.wikipedia.org/wiki/Caesar_cipher">Wikipedia Page</a>.
-      </p>
-      <br>
-      <p>
-        Made by <a href="https://demont.is">@dervondenbergen</a>
-        This project is available on <a href="https://github.com/dervondenbergen/caesarcipher">GitHub</a>.
-      </p>
-    </div>
-    <textarea class="input" tabindex="1"></textarea>
-    <div class="shift">
-      <h3>Shift</h3>
-      <input type="number" min="0" max="25" value="0" tabindex="2"/>
-      <div id="increase" class="increase button" tabindex="3" role="button">+</div>
-      <div id="decrease" class="decrease button" tabindex="4" role="button">–</div>
-      <div class="example">(A → <span class="to">A</span>)</div>
-    </div>
-    <textarea class="output" tabindex="5"></textarea>
+    <div id="app"></div>
   </body>
-  <script src="script.js" async></script>
 </html>
